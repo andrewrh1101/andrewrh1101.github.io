@@ -25,6 +25,14 @@
             width: 90%;
             max-width: 400px;
         }
+        .profile-container img {
+            border-radius: 15px;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
         .profile-container h1 {
             margin: 0;
             font-size: 2.5em;
@@ -39,29 +47,17 @@
             font-weight: bold;
             color: #007bff;
         }
-        .profile-container a {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            text-decoration: none;
-            color: white;
-            background: #007bff;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-        .profile-container a:hover {
-            background: #0056b3;
-        }
     </style>
 </head>
 <body>
     <div class="profile-container">
+        <!-- 사진 URL을 아래에 넣어 -->
+        <img src="https://raw.githubusercontent.com/andrewrh1101/리포지토리명/main/1000004409.jpeg" alt="고은혁의 사진">
         <h1>고은혁</h1>
         <p>안녕하세요! 저는 <span class="highlight">25살</span>이며,<br> 
         <span class="highlight">숭실대학교 소프트웨어학부 3학년</span>에 재학 중입니다.</p>
         <p>프론트엔드와 백엔드 모두에 관심이 있으며,<br>
         <span class="highlight">풀스택 개발자</span>를 꿈꾸고 있습니다.</p>
-        <a href="https://github.com/andrewrh1101" target="_blank">GitHub 방문하기</a>
     </div>
 </body>
 </html>
