@@ -3,54 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내 소개</title>
+    <title>고은혁의 프로필</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #f3f4f6;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+        .profile-container h1 {
+            margin: 0;
+            font-size: 2.5em;
             color: #333;
         }
-        .container {
-            margin-top: 50px;
-        }
-        img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
-        h1 {
-            font-size: 2.5em;
-            color: #222;
-        }
-        p {
+        .profile-container p {
             font-size: 1.2em;
-            color: #555;
             margin: 10px 0;
+            line-height: 1.5;
         }
-        .links a {
-            text-decoration: none;
+        .profile-container .highlight {
+            font-weight: bold;
             color: #007bff;
-            margin: 0 10px;
-            font-size: 1.2em;
         }
-        .links a:hover {
-            text-decoration: underline;
+        .profile-container a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background: #007bff;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .profile-container a:hover {
+            background: #0056b3;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://via.placeholder.com/150" alt="내 사진">
-        <h1>안녕하세요, 고은혁입니다!</h1>
-        <p>숭실대학교 소프트웨어학부 3학년에 재학중입니다.</p>
-        <p>웹 개발을 공부중입니다.</p>
-        <div class="links">
-            <a href="https://github.com/andrewrh1101" target="_blank">GitHub</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        </div>
+    <div class="profile-container">
+        <h1>고은혁</h1>
+        <p>안녕하세요! 저는 <span class="highlight">25살</span>이며,<br> 
+        <span class="highlight">숭실대학교 소프트웨어학부 3학년</span>에 재학 중입니다.</p>
+        <p>프론트엔드와 백엔드 모두에 관심이 있으며,<br>
+        <span class="highlight">풀스택 개발자</span>를 꿈꾸고 있습니다.</p>
+        <a href="https://github.com/andrewrh1101" target="_blank">GitHub 방문하기</a>
     </div>
 </body>
 </html>
