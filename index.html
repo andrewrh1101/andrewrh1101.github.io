@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew KOH | Portfolio</title>
+    <title>Andrew KOH | Profile</title>
     <style>
         /* Reset & Body Style */
         * {
@@ -21,6 +21,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            padding: 20px;
         }
 
         /* Card Container */
@@ -36,9 +37,9 @@
 
         /* Profile Image */
         .profile-card img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px; /* 둥글게 말고 살짝 라운딩 */
             border: 3px solid #4facfe;
             margin-bottom: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -97,17 +98,19 @@
 </head>
 <body>
     <div class="profile-card">
+        <!-- 사진 -->
         <img src="https://raw.githubusercontent.com/andrewrh1101/andrewrh1101.github.io/main/1000004409.jpeg" alt="Andrew KOH">
+        
+        <!-- 이름 -->
         <h1>Andrew KOH</h1>
+        
+        <!-- 학력 정보 -->
         <p>
-            Hi! I’m <span class="highlight">Andrew KOH</span>, a passionate <span class="highlight">Full-Stack Developer</span>.<br>
-            Currently pursuing my degree in <span class="highlight">Software Engineering</span> at <span class="highlight">Soongsil University</span>.
+            Graduated from <span class="highlight">Hanbit Elementary School</span><br>
+            Graduated from <span class="highlight">Hanbit Middle School</span><br>
+            Graduated from <span class="highlight">Suji High School</span><br>
+            Currently studying at <span class="highlight">Soongsil University, Department of Software</span>
         </p>
-        <p>
-            I specialize in creating beautiful, responsive websites and scalable backend systems.<br>
-            My goal is to craft seamless digital experiences for users worldwide.
-        </p>
-        <a href="#contact">Get in Touch</a>
     </div>
 </body>
 </html>
