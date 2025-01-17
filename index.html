@@ -27,7 +27,7 @@
         /* Card Container */
         .profile-card {
             background: white;
-            width: 350px;
+            width: 400px; /* 카드의 너비를 키움 */
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -38,8 +38,8 @@
         /* Profile Image */
         .profile-card img {
             width: 100%;
-            max-width: 300px;
-            border-radius: 10px; /* 둥글게 말고 살짝 라운딩 */
+            max-width: 350px; /* 이미지 크기도 조정 */
+            border-radius: 10px;
             border: 3px solid #4facfe;
             margin-bottom: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -47,40 +47,22 @@
 
         /* Profile Title */
         .profile-card h1 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
+            font-size: 2rem;
+            margin-bottom: 15px;
             color: #222;
         }
 
         .profile-card p {
-            font-size: 1rem;
+            font-size: 1.1rem;
             margin-bottom: 15px;
             color: #666;
+            word-wrap: break-word; /* 텍스트가 길어지면 줄바꿈 */
         }
 
         /* Highlight Text */
         .highlight {
             color: #4facfe;
             font-weight: bold;
-        }
-
-        /* Button Style */
-        .profile-card a {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background: #4facfe;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-size: 1rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .profile-card a:hover {
-            background: #00c6ff;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
         /* Fade-in Animation */
@@ -109,7 +91,7 @@
             Graduated from <span class="highlight">Hanbit Elementary School</span><br>
             Graduated from <span class="highlight">Hanbit Middle School</span><br>
             Graduated from <span class="highlight">Suji High School</span><br>
-            Currently studying at <span class="highlight">Soongsil University, Department of Software engineering</span>
+            Currently studying at <span class="highlight">Soongsil University, Department of Software</span>
         </p>
     </div>
 </body>
