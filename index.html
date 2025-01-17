@@ -5,58 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>고은혁의 프로필</title>
     <style>
+        /* 전체 스타일 */
         body {
             margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
             color: #333;
-            background: linear-gradient(135deg, #89f7fe, #66a6ff);
-            min-height: 100vh;
+        }
+
+        /* 헤더 스타일 */
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        /* 네비게이션 스타일 */
+        .nav {
+            background-color: #333;
+            overflow: hidden;
             display: flex;
             justify-content: center;
-            align-items: center;
         }
-        .profile-container {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        .nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
             text-align: center;
-            width: 90%;
-            max-width: 400px;
         }
-        .profile-container img {
-            border-radius: 15px;
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            object-fit: cover;
+
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* 메인 콘텐츠 */
+        .main {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .main img {
+            max-width: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
         }
-        .profile-container h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #333;
+
+        .main h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
         }
-        .profile-container p {
-            font-size: 1.2em;
-            margin: 10px 0;
-            line-height: 1.5;
+
+        .main p {
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
-        .profile-container .highlight {
-            font-weight: bold;
-            color: #007bff;
+
+        /* 푸터 스타일 */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="profile-container">
-        <img src="https://raw.githubusercontent.com/andrewrh1101/andrewrh1101.github.io/main/1000004409.jpeg" alt="사진">
-        <h1>고은혁</h1>
-        <p>안녕하세요! 저는 <span class="highlight">25살</span>이며,<br> 
-        <span class="highlight">숭실대학교 소프트웨어학부 3학년</span>에 재학 중입니다.</p>
-        <p>프론트엔드와 백엔드 모두에 경력이 있으며,<br>
-        <span class="highlight">풀스택 개발자입니다.</p>
+
+    <!-- 헤더 -->
+    <div class="header">
+        <h1>고은혁의 프로필</h1>
     </div>
+
+    <!-- 네비게이션 바 -->
+    <div class="nav">
+        <a href="#about">소개</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#contact">연락처</a>
+    </div>
+
+    <!-- 메인 콘텐츠 -->
+    <div class="main" id="about">
+        <img src="https://raw.githubusercontent.com/andrewrh1101/andrewrh1101.github.io/main/1000004409.jpeg" alt="고은혁의 사진">
+        <h1>안녕하세요! 고은혁입니다.</h1>
+        <p>
+            저는 숭실대학교 소프트웨어학부 3학년에 재학 중이며, 25살입니다.<br>
+            프론트엔드와 백엔드 모두에 관심이 많아, <strong>풀스택 개발자</strong>를 목표로 공부하고 있습니다.<br>
+            열정적으로 배우고 도전하며, 멋진 웹과 앱을 개발하는 것이 꿈입니다.
+        </p>
+    </div>
+
+    <!-- 푸터 -->
+    <div class="footer">
+        <p>&copy; 2025 고은혁 | <a href="https://github.com/andrewrh1101" target="_blank">GitHub</a></p>
+    </div>
+
 </body>
 </html>
